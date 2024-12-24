@@ -1,0 +1,237 @@
+/* colors.css */
+
+/* Custom Color Definitions for Website */
+
+.mindloops-bg-footer {
+    background-color: #0a7eff;
+    /* Custom footer background color */
+}
+
+.mindloops-dashboard {
+    background-color: #EEEFF3;
+    /* Custom dashboard background color */
+}
+
+.mindloops-slider {
+    /* Custom dashboard background color */
+    background-color: #DEEDFF;
+
+}
+
+.mindloops-bgf {
+    /* Custom dashboard background color */
+    background-color: #F7F8FC;
+
+}
+
+.title {
+    /* Custom Title Font color */
+    color: #000000;
+}
+
+.primary-fixed-dim {
+    background-color: #C2DEFF;
+}
+
+.primary-container {
+    background-color: #DEEDFF;
+}
+
+.color-search {
+    border-color: #0355B0;
+    color: #0355B0;
+}
+
+.secondary-container {
+    background-color: #FFF0DD;
+}
+
+/* Add more custom color definitions as needed */
+
+.MlSysOnPrimaryFixed {
+    background: #00308D;
+}
+
+.MlSysOnPrimaryFixedVariant {
+    background: #1177E9;
+}
+
+.MlSysSecondary {
+    background: #FCA600;
+}
+
+.MlSysOnSecondary {
+    background: white;
+}
+
+.MlSysSecondaryContainer {
+    background: #FFF0DD;
+}
+
+.MlSysOnSecondaryContainer {
+    background: #ED9004;
+}
+
+.MlSysSecondaryFixed {
+    background: #FFF0DD;
+}
+
+.MlSysSecondaryFixedDim {
+    background: #FBE0BF;
+}
+
+.MlSysOnSecondaryFixed {
+    background: #56370A;
+}
+
+.MlSysOnSecondaryFixedVariant {
+    background: #8A5911;
+}
+
+.MlSysSurface {
+    background: #F7F8FC;
+}
+
+.MlSysSurfaceBright {
+    background: #F7F8FC;
+}
+
+.MlSysSurfaceDim {
+    background: #D7DAE0;
+}
+
+.MlSysSurfaceContainerLowest {
+    background: white;
+}
+
+.MlSysSurfaceContainerLow {
+    background: #F2F3F7;
+}
+
+.MlSysSurfaceContainer {
+    background: #EEEFF3;
+}
+
+.MlSysSurfaceContainerHigh {
+    background: #E8EAEE;
+}
+
+.MlSysSurfaceContainerHighest {
+    background: #DFE1E5;
+}
+
+.MlSysOnSurface {
+    background: #181B1D;
+}
+
+.MlSysOnSurfaceVariant {
+    background: #43454D;
+}
+
+.MlSysOutline {
+    background: #75767C;
+}
+
+.MlSysOutlineVariant {
+    background: #C4C7CE;
+}
+
+.MlSysImageHolder01 {
+    background: #D9D9D9;
+}
+
+.MlSysGoldGradient {
+    background: linear-gradient(180deg, #F4AF00 0%, #F1D170 100%);
+}
+
+.MlSysGoldVariant {
+    background: #753E0C;
+}
+
+.MlSysGold01 {
+    background: #F4AF00;
+}
+
+.MlSysGold02 {
+    background: #F1D170;
+}
+
+.MlSysGold03 {
+    background: #FFEEBB;
+}
+
+.MlSysGoldVariant02 {
+    background: #BD9978;
+}
+
+.MlSysGoldGradient2 {
+    background: linear-gradient(180deg, #FFF4D4 0%, #FFEBB0 100%);
+}
+
+.MlSysOnSecondaryContainerDim {
+    background: #9F5007;
+}
+
+.MlSysErrorSurface {
+    background: #FFF0DD;
+}
+
+.MlSysErrorSurfaceContainer {
+    background: #FFF3E1;
+}
+
+.MlSysErrorSurfaceContainerLow {
+    background: #FBE0BF;
+}
+
+.MlSysErrorSurfaceContainerLowest {
+    background: #F2F3F7;
+}
+
+.MlSysErrorSurfaceContainerHigh {
+    background: #E8EAEE;
+}
+
+.MlSysErrorSurfaceContainerHighest {
+    background: #DFE1E5;
+}
+
+:root {
+    --primary-fixed-bg: #00308D;
+    --primary-fixed-variant-bg: #1177E9;
+    --secondary-bg: #FCA600;
+    --on-secondary-bg: white;
+    --secondary-container-bg: #FFF0DD;
+    --on-secondary-container-bg: #ED9004;
+    --secondary-fixed-bg: #FFF0DD;
+    --secondary-fixed-dim-bg: #FBE0BF;
+    --on-secondary-fixed-bg: #56370A;
+    --on-secondary-fixed-variant-bg: #8A5911;
+    --surface-bg: #F7F8FC;
+    --surface-bright-bg: #F7F8FC;
+    --surface-dim-bg: #D7DAE0;
+    --surface-container-lowest-bg: white;
+    --surface-container-low-bg: #F2F3F7;
+    --surface-container-bg: #EEEFF3;
+    --surface-container-high-bg: #E8EAEE;
+    --surface-container-highest-bg: #DFE1E5;
+    --on-surface-bg: #181B1D;
+    --on-surface-variant-bg: #43454D;
+    --outline-bg: #75767C;
+    --outline-variant-bg: #C4C7CE;
+    --image-holder-01-bg: #D9D9D9;
+    --gold-gradient-bg: linear-gradient(180deg, #F4AF00 0%, #F1D170 100%);
+    --gold-variant-bg: #753E0C;
+    --gold-01-bg: #F4AF00;
+    --gold-02-bg: #F1D170;
+    --gold-03-bg: #FFEEBB;
+    --gold-variant-02-bg: #BD9978;
+    --gold-gradient-2-bg: linear-gradient(180deg, #FFF4D4 0%, #FFEBB0 100%);
+    --on-secondary-container-dim-bg: #9F5007;
+    --error-surface-bg: #FFF0DD;
+    --error-surface-container-bg: #FFF3E1;
+    --error-surface-container-low-bg: #FBE0BF;
+    --error-surface-container-lowest-bg: #F2F3F7;
+    --error-surface-container-high-bg: #E8EAEE;
+    --error-surface-container-highest-bg: #DFE1E5;
+}

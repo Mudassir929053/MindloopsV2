@@ -1,0 +1,22 @@
+
+.nav-tabs .nav-link {
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    color: #333;
+    background-color: transparent;
+    padding: 10px 20px;
+    text-align: left;
+    border: 2px solid transparent;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #fff;
+    font-weight: bolder;
+    border-color: #007bff;
+    /* Blue border color for active tab */
+}
+
+.tab-content {
+    padding: 20px;
+}

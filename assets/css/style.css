@@ -1,0 +1,457 @@
+/* Reset some default styles to ensure proper alignment */
+@import url('fonts.css');
+@import url('colors.css');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'CustomFont', san-serif;
+
+}
+
+/* Define styles for selected text */
+::selection {
+    background: transparent;
+    text-shadow: #000 0 0 2px;
+}
+::-moz-selection {
+    background: transparent;
+    text-shadow: #000 0 0 2px;
+}
+::-webkit-selection {
+    background: transparent;
+    text-shadow: #000 0 0 2px;
+}
+::-o-selection {
+    background: transparent;
+    text-shadow: #000 0 0 2px;
+}
+
+/* Disable text selection and right-click for the entire website */
+.no-select-text {
+    user-select: none;
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+    -khtml-user-select: none; /* Konqueror */
+}
+
+/* Define font weights and styles based on a common hierarchy for additional fonts */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../font/MADE Tommy Soft Regular PERSONAL USE.otf') format('opentype');
+    font-weight: 48px; /* Regular weight for body text */
+    font-style: medium;
+}
+
+
+/* Add more @font-face rules for other font variations as needed */
+
+/* Use the custom font with normal weight for regular text */
+/* body {
+    font-family: 'CustomFont', sans-serif;
+    font-weight: normal;
+} */
+
+/* Example usage of font weights in headings */
+h1, h2, h3 {
+    font-weight: bold; /* Use bold for headings for stronger emphasis */
+}
+/* Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+
+/* End Preloader */
+
+ /* Style for the "Go to Top" button */
+#goTopButton {
+    display: none; /* Hide the button by default */
+    position: fixed; /* Fixed positioning for the button */
+    bottom: 20px; /* Distance from the bottom of the page */
+    right: 30px; /* Distance from the right side of the page */
+    z-index: 99; /* Ensure it's on top of other elements */
+    border: none; /* Remove button border */
+    outline: none; /* Remove button outline on click */
+    background-color: #f3c333; /* Button background color */
+    color: white; /* Button text color */
+    font-weight: 900;
+    cursor: pointer; /* Show pointer cursor on hover */
+    padding: 8px 13px; /* Padding for the button (rectangular shape) */
+    border-radius: 3px; /* Rounded corners for the button */
+}
+
+
+
+/* Style for the button on hover */
+#goTopButton:hover {
+    background-color: #1c7ee7; /* Button background color on hover */
+}
+
+/* Style for the cookies message */
+.cookies-message {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+/* Set background image */
+.bgimage-index {
+    background-image: url('../images/homepage/background-image-home.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local,scroll;
+    /* You can add more background properties as needed */
+    height: 80%;
+    /* Ensure the background covers the entire viewport height */
+}
+
+/* Set background image */
+.bgimage-member {
+    background-image: url('../images/homepage/Group 886.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* You can add more background properties as needed */
+    height: 100%;
+    /* Ensure the background covers the entire viewport height */
+}
+
+.bgimage-memberclub_lp {
+    background-image: url('../images/memberclub/membersclub_lp.png');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    /* You can add more background properties as needed */
+    height: 100%;
+    /* Ensure the background covers the entire viewport height */
+}
+
+.bgimage-membertutor {
+    background-image: url('../images/memberclub/Group_543.png');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    /* You can add more background properties as needed */
+    height: 100%;
+    /* Ensure the background covers the entire viewport height */
+}
+
+.bgimage-memberclub_elp{
+    background-image: url('../images/memberclub/Mask_group-2.png');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    /* You can add more background properties as needed */
+    height: 100%;
+    /* Ensure the background covers the entire viewport height */
+}
+
+.bgimage-Rectangle{
+    background-image: url('../images/memberclub/bg_brandlisting.png');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    /* You can add more background properties as needed */
+    height: 100%;
+    /* Ensure the background covers the entire viewport height */
+}
+
+/* Set background image */
+.bgimage-members {
+    background-image: url('../images/homepage/Rectangle 288.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* You can add more background properties as needed */
+    height: 100%;
+    /* Ensure the background covers the entire viewport height */
+}
+/* Set background image */
+.bgimage-article {
+    background-image: url('../images/homepage/Group 902.png');
+    background-size: cover; /* Ensure the background covers the entire div */
+    background-repeat: no-repeat;
+    background-position: center center; /* Center the background image */
+    /* You can add more background properties as needed */
+    /* min-height: 100vh; Ensure the background covers the entire viewport height */
+}
+
+/* Center content vertically and horizontally */
+.bgimage-article .m-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    height: 100%;
+}
+
+/* Add padding to your content within the div */
+.bgimage-article .m-5 p, .bgimage-article .m-5 h2 {
+    padding: 5px;
+}
+
+.bgimage-article2 {
+    background-image: url('../images/homepage/Group 902.png');
+    background-size: cover; /* Ensure the background covers the entire div */
+    background-repeat: no-repeat;
+    background-position: center center; /* Center the background image */
+    /* You can add more background properties as needed */
+    /* min-height: 100vh; Ensure the background covers the entire viewport height */
+}
+
+/* Center content vertically and horizontally */
+.bgimage-article2 .m-5 {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    
+    height: 100%;
+}
+
+/* Add padding to your content within the div */
+.bgimage-article2 .m-5 p, .bgimage-article2 .m-5 h2 {
+    padding: 5px;
+}
+
+
+/* Create a flex container to hold your content */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Make the container at least as tall as the viewport */
+}
+
+/* Main content area */
+.main-content {
+    flex: 1;
+    /* Allow it to grow and fill the available space */
+    /* padding-top: 20px; */
+    /* Add some padding for spacing */
+}
+
+/* Sticky footer styles */
+footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    /* Add some padding for spacing */
+    text-align: center;
+    flex-shrink: 0;
+    /* Ensure the footer doesn't shrink */
+}
+
+/* Carousels */
+
+.custom-img-height {
+    height: 400px;
+    /* Adjust the height as per your requirements */
+}
+
+/* Carousels */
+
+/* Custom previous and next button styles */
+.carousel-custom-icon {
+    background-size: contain;
+    width: 40px;
+    /* Adjust the width as needed */
+    height: 40px;
+    /* Adjust the height as needed */
+    background-repeat: no-repeat;
+}
+
+.prev-icon {
+    background-image: url('../images/homepage/Round Button 3.png');
+}
+
+.next-icon {
+    background-image: url('../images/homepage/Round Button 1.png');
+}
+
+.members {
+    color: #0a7eff;
+}
+
+.vertical-tabs {
+    border: none;
+    padding: 0;
+}
+
+
+.rounded-circle.profile-pic-container {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    /* border: 2px solid #007BFF; Blue border */
+    border-radius: 50%;
+    /* Makes it circular */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* color: #007BFF; Blue text color */
+    background-color: #9cf4fa;
+}
+
+.rounded-circle.profile-pic-container i {
+    font-size: 24px;
+}
+
+.profile-pic-label {
+    cursor: pointer;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.custom-alert-padding {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Style for disabled input fields */
+input:disabled {
+    background-color: #ee0d0d; /* Set the background color to a light gray */
+    color: #666; /* Set the text color to a darker gray */
+}
+
+
+/* Timeline container */
+.timeline {
+    position: relative;
+    padding: 40px 0;
+    margin-left: 30px;
+    /* Adjust the margin for proper spacing */
+}
+
+/* Timeline item */
+.timeline-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* Center the dot and line vertically */
+    position: relative;
+    margin: 20px 0;
+}
+
+/* Timeline dot */
+.timeline-dot {
+    width: 20px;
+    height: 20px;
+    background-color: #fff; /* Set the background color to white */
+    border: 2px solid #007bff; /* Add a border with your desired color */
+    border-radius: 50%;
+    margin-right: 20px;
+    flex-shrink: 0;
+    /* Prevents the dot from shrinking */
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Default styles for .timeline-line (for screens wider than 768px) */
+.timeline-line {
+    width: 2px;
+    background-color: #007bff;
+    height: 100%;
+    position: absolute;
+    left: calc(1%);
+    z-index: 1;
+}
+
+/* Media query for tablets (768px wide) */
+@media (max-width: 768px) {
+    .timeline-line {
+        width: 2px;
+        background-color: #007bff;
+        height: 100%;
+        position: absolute;
+        left: calc(2%);
+        z-index: 1;
+    }
+}
+
+/* Media query for mobile devices (576px wide) */
+@media (max-width: 576px) {
+    .timeline-line {
+        width: 2px;
+        background-color: #007bff;
+        height: 100%;
+        position: absolute;
+        left: calc(3%);
+        z-index: 1;
+    }
+}
+
+
+/* Date style */
+.timeline-date {
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+
+/* Iframe CSS */
+
+[style*="--aspect-ratio"]> :first-child {
+    width: 100%;
+}
+
+[style*="--aspect-ratio"]>img {
+    height: auto;
+}
+
+@supports (--custom:property) {
+    [style*="--aspect-ratio"] {
+        position: relative;
+    }
+
+    [style*="--aspect-ratio"]::before {
+        content: "";
+        display: block;
+        padding-bottom: calc(100% / (var(--aspect-ratio)));
+    }
+
+    [style*="--aspect-ratio"]> :first-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+}

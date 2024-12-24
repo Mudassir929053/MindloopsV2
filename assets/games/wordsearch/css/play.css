@@ -1,0 +1,142 @@
+.button-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  #ok-btn {
+    background-color: #fd1364;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 35px;
+    /* increased button size */
+    font-size: 1.8rem;
+    /* increased font size */
+    border-radius: 20px;
+    /* margin: 10px; */
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    margin-left: 95px;
+  }
+
+  #ok-btn:hover {
+    transform: scale(1.1);
+    background-color: #FCEADE;
+    color: #F8A5C2;
+  }
+
+  #popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    /* Center the modal horizontally */
+    align-items: center;
+  }
+
+  .popup-content {
+    /* background-image: url('assets/games/wordsearch/images/Asset27.png'); */
+    background-image: url('../images/Asset27.png');
+    background-size: contain;
+    /* cover the background image */
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    padding: 10rem;
+    /* decreased container size */
+    border-radius: 5px;
+    /* text-align: center; */
+  }
+
+  #myModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    /* decreased container size */
+    border-radius: 30px;
+
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .modal1-content {
+    background-color: transparent;
+    border: none;
+    color: black;
+    /* position: absolute; */
+    /* width: 15%; */
+    /* margin-top: 80px;
+    margin-right: 60px; */
+  }
+
+  .modal1-dialog {
+    /* background-color: transparent; */
+    background-image: url('../images/Asset27.png');
+    /* Center and add the background image */
+    background-size: contain;
+    padding: 15rem;
+    /* decreased container size */
+    border-radius: 30px;
+    /* background-color: transparent; */
+    border: none;
+    background-repeat: no-repeat;
+    /* max-width: 800px; */
+    /* Set the background color of the modal content to transparent */
+    position: absolute;
+    left: 550px;
+    top: 25px;
+
+  }
+
+  .modal1-footer button {
+    background-color: #2e7d32;
+    color: white;
+    /* Style the button with a green background and white text */
+    border-radius: 0;
+    /* Remove the button border radius */
+  }
+
+  .modal1-footer button:hover {
+    background-color: #1b5e20;
+    /* Darken the button background color on hover */
+  }
+
+  #quit-btn,
+  #play-again-btn,
+  #quit-btn-lost,
+  #play-again-btn-lost {
+    background-color: #fd1364;
+    color: white;
+    font-weight: bold;
+    border: none;
+    margin: 20px;
+    /* increased button size */
+    font-size: 1.9rem;
+    /* increased font size */
+    border-radius: 10px;
+    /* margin: 10px; */
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+
+  #quit-btn-lost:hover,
+  #play-again-btn-lost:hover,
+  #quit-btn:hover,
+  #play-again-btn:hover {
+    transform: scale(1.1);
+    background-color: #FCEADE;
+    color: #F8A5C2;
+  }

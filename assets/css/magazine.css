@@ -1,0 +1,41 @@
+.ls-2{
+    letter-spacing: 2px;
+}
+/* Media query for small screens (max-width: 767px) */
+@media (max-width: 767px) {
+    /* Override letter-spacing for small screens */
+    .ls-2 {
+        letter-spacing: -1px; /* Set letter-spacing to 0 for small screens */
+    }
+}
+/* CSS for mind-booster Content Page  */
+.mindbooster-content a{
+
+    color: #FCA600;
+    text-decoration: none;
+
+}
+.mindbutton {
+    border-color: #C4C7CE;
+    color: black;
+    margin-bottom: 15px;
+
+}
+.mindbooster-content span{
+    color: #C4C7CE;
+}
+.img-text-card{
+    position: absolute; 
+    top: 0; 
+    left: 0; margin: 10px;
+    background-color: #0355b0; 
+    font-weight:lighter;
+
+}
+.img-text-card-2{
+    position: absolute; 
+    top: 0; 
+    left: 0; margin: 10px;
+    background-color: #FCA600;
+    font-weight:lighter;
+}

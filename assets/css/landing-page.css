@@ -1,0 +1,66 @@
+  /* In your CSS file */
+  .landing-image {
+    width: 571px;
+    height: 552px;
+}
+
+.landing-text {
+    color: black;
+    font-size: 48px;
+    /* font-family: MADE Tommy Soft; */
+    font-weight: 100;
+    word-wrap: break-word
+}
+
+.landing-h2 {
+    color: black;
+    font-size: 32px;
+    /* font-family: MADE Tommy Soft; */
+    font-weight: 500;
+    word-wrap: break-word
+}
+
+.landing-for {
+    color: black;
+    font-size: 32px;
+    /* font-family: MADE Tommy Soft; */
+    font-weight: 500;
+    word-wrap: break-word
+}
+
+.landing-with {
+    color: black;
+    font-size: 24px;
+    /* font-family: MADE Tommy Soft; */
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+.landing-content {
+    color: black;
+    font-size: 16px;
+    /* font-family: MADE Tommy Soft; */
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+.landing-card {
+    color: black;
+    font-size: 14px;
+    /* font-family: MADE Tommy Soft; */
+    font-weight: 400;
+    word-wrap: break-word
+}
+/* CSS for mobile devices */
+/* CSS for mobile devices */
+@media (max-width: 576px) {
+.card-img-land {
+    width: 50%; /* Make images responsive */
+    height: auto; /* Auto-adjust height to maintain aspect ratio */
+    display: block; /* Center the image horizontally */
+    margin: 0 auto; /* Center the image horizontally */
+}
+}
+
+
+

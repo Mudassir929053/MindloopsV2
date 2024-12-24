@@ -1,0 +1,132 @@
+.p1{
+   color: #000000;
+   font-size:32px;
+   /* text-align: justify; */
+}
+
+.p2{
+    /* font-weight: bold;  */
+    color: #000000;
+   font-size:24px;
+   text-align:left;
+
+}
+
+.custom-btn {
+    background-color: #0355B0;
+    /* Your custom color */
+    color: #FFFFFF;
+    /* Text color on the button */
+}
+
+
+
+/* Define styles for the horizontal rule (hr) element */
+.hr-style {
+    width: 100%;
+    height: 2px;
+    background-color: #0355B0;
+    opacity: 1;
+}
+.parentnav {
+    margin-bottom: 30px;
+    border: none;
+}
+
+.nav-pills .btn {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+
+.circular-card {
+    width: 450px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: #EAF4FE;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    transition: transform 0.3s;
+    /* Add transition for smooth zoom effect */
+
+}
+
+/* Add hover effect to zoom in */
+.circular-card:hover {
+    transform: scale(1.2);
+    /* Increase the scale on hover (zoom in) */
+}
+
+
+@media (min-width: 992px) and (max-width: 1100px) {
+    .circular-card {
+        width: 320px;
+        height: 320px;
+        margin: 10px;
+    }
+
+    .circular-card:hover {
+        transform: scale(1.2);
+        /* Increase the scale on hover (zoom in) */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .circular-card {
+        width: 550px;
+        height: 550px;
+        margin: 20px;
+
+    }
+}
+
+@media (max-width: 767px) {
+    .circular-card {
+        width: 550px;
+        height: 550px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 580px) {
+    .circular-card {
+        width: 320px;
+        height: 320px;
+        margin: 10px;
+    }
+}
+
+/* Media query for screens with a maximum width of 768px (adjust as needed) */
+@media (max-width: 768px) {
+    .h2 {
+        font-size: 16px; /* Reduce font size for smaller screens */
+    }
+    
+    /* Reduce font size for <p> tags on smaller screens */
+    p {
+        font-size: 12px;
+    }
+}
+/* Define styles for the User Benefits Card */
+.user-benefits-card {
+    background-image: url('../images/homepage/Rectangle 183.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.user-benefits-card img {
+    width: 500px;
+}
+
+
+@media (max-width: 991px) {
+    .user-benefits-card {
+        background-image: none !important;
+        /* Remove the background image */
+    }
+}

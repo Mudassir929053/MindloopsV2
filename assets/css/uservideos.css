@@ -1,0 +1,96 @@
+.zooms:hover {
+    -ms-transform: scale(1.0);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+}
+.custom-hr {
+    border-color: #0355B0;
+    /* Use !important to override Bootstrap styles */
+}
+
+/* Style for the container */
+.hr-container {
+    position: relative;
+    width: 100%;
+    height: 1.5px;
+    /* Set the height of the HR line */
+    background-color: lightgray;
+    /* Background color for the entire HR line */
+}
+
+/* Style for the left half */
+.hr-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 300%;
+    transform: translateY(-50%);
+    /* Move the left half left by 50% */
+    background-color: #007bff;
+    /* Color for the left half */
+}
+
+
+.hr-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    background-color: #007bff;
+    /* Color for the right half */
+}
+
+.hr-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    /* Width of the left border */
+    height: 100%;
+    background-color: #007bff;
+    /* Color of the left border */
+}
+.hr-middle {
+    position: absolute;
+    top: 0;
+    left: 42%;
+    width: 18%;
+    height: 300%;
+    transform: translateY(-50%);
+    background-color: #007bff;
+    /* Color for the middle portion */
+}
+
+.hr-left1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #007bff;
+    /* Color for the left half */
+}
+.hr-middle {
+    position: absolute;
+    top: 0;
+    left: 42%;
+    width: 18%;
+    height: 300%;
+    transform: translateY(-50%);
+    background-color: #007bff;
+    /* Color for the middle portion */
+}
+
+.hr-left1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #007bff;
+    /* Color for the left half */
+}
