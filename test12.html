@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Position Divs Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            position: relative;
+            width: 80%;
+            max-width: 1200px;
+            height: 500px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Ensure child elements are contained */
+        }
+
+        .responsive-div {
+            position: absolute;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            box-sizing: border-box; /* Include padding in width and height calculations */
+        }
+
+        .div1 { top: 20px; left: 20px; width: 200px; height: 100px; }
+        .div2 { top: 20px; right: 20px; width: 200px; height: 100px; }
+        .div3 { bottom: 20px; left: 20px; width: 200px; height: 100px; }
+        .div4 { bottom: 20px; right: 20px; width: 200px; height: 100px; }
+        .div5 { top: 40%; left: 40%; transform: translate(-50%, -50%); width: 200px; height: 100px; }
+
+        /* Responsive behavior */
+        @media (max-width: 1200px) {
+            .responsive-div {
+                width: 180px;
+                height: 90px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .responsive-div {
+                width: 160px;
+                height: 80px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .responsive-div {
+                width: 140px;
+                height: 70px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .responsive-div {
+                width: 80px;
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="responsive-div div1">Div 1</div>
+        <div class="responsive-div div2">Div 2</div>
+        <div class="responsive-div div3">Div 3</div>
+        <div class="responsive-div div4">Div 4</div>
+        <div class="responsive-div div5">Div 5</div>
+    </div>
+</body>
+</html>

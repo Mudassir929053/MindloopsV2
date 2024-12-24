@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Analytics Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+p {
+    margin: 0;
+    color: #6c757d;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.charts {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.chart {
+    background-color: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    padding: 20px;
+    width: 48%;
+}
+
+.chart h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.stat {
+    background-color: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 16px;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-size: 24px;
+    margin: 0;
+}
+
+</style>
+<body>
+    <div class="container">
+        <header>
+            <img src="your-logo.png" alt="Your Logo" class="logo">
+            <h1>Web Analytics Dashboard</h1>
+            <p>January 2024</p>
+        </header>
+        <main>
+            <div class="charts">
+                <div class="chart">
+                    <h2>Sessions</h2>
+                    <canvas id="sessionsChart"></canvas>
+                </div>
+                <div class="chart">
+                    <h2>Sessions</h2>
+                    <canvas id="pieChart"></canvas>
+                </div>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <h3>Engaged Sessions</h3>
+                    <p>1,158</p>
+                </div>
+                <div class="stat">
+                    <h3>Engagement Rate</h3>
+                    <p>24.31%</p>
+                </div>
+                <div class="stat">
+                    <h3>Sessions</h3>
+                    <p>755</p>
+                </div>
+                <div class="stat">
+                    <h3>Sessions per User</h3>
+                    <p>35.55</p>
+                </div>
+                <div class="stat">
+                    <h3>Active Users</h3>
+                    <p>982</p>
+                </div>
+                <div class="stat">
+                    <h3>Average Engagement Time</h3>
+                    <p>00:00:30</p>
+                </div>
+                <div class="stat">
+                    <h3>New Users</h3>
+                    <p>841</p>
+                </div>
+                <div class="stat">
+                    <h3>Total Users</h3>
+                    <p>469</p>
+                </div>
+                <div class="stat">
+                    <h3>User Engagement</h3>
+                    <p>21m 32s</p>
+                </div>
+                <div class="stat">
+                    <h3>Views</h3>
+                    <p>681</p>
+                </div>
+                <div class="stat">
+                    <h3>Conversions</h3>
+                    <p>931</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        window.onload = function () {
+    const sessionsChartCtx = document.getElementById('sessionsChart').getContext('2d');
+    const pieChartCtx = document.getElementById('pieChart').getContext('2d');
+
+    new Chart(sessionsChartCtx, {
+        type: 'line',
+        data: {
+            labels: ['Jan 1', 'Jan 7', 'Jan 14', 'Jan 21', 'Jan 28'],
+            datasets: [{
+                label: 'Sessions',
+                data: [40, 30, 20, 40, 50, 40, 30, 20, 40, 50, 40, 30, 20, 40, 50, 40, 30, 20, 40, 50],
+                borderColor: '#007bff',
+                fill: false,
+                tension: 0.1
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+    new Chart(pieChartCtx, {
+        type: 'doughnut',
+        data: {
+            labels: ['Email', 'Referral', 'Paid Search', 'Direct', 'Social', 'Display', 'Organic Search'],
+            datasets: [{
+                data: [40, 40, 37, 35, 32, 28, 10],
+                backgroundColor: ['#007bff', '#6610f2', '#6f42c1', '#e83e8c', '#fd7e14', '#ffc107', '#28a745']
+            }]
+        },
+        options: {
+            responsive: true
+        }
+    });
+};
+
+    </script>
+</body>
+</html>

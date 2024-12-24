@@ -1,0 +1,35 @@
+.
+├── admin
+├── assets
+│   ├── brand
+│   │   ├── bootstrap-logo.svg
+│   │   └── bootstrap-logo-white.svg
+│   ├── css
+│   │   └── style.css
+│   ├── dist
+│   │   ├── css
+│   │   │   ├── bootstrap.min.css
+│   │   │   ├── bootstrap.min.css.map
+│   │   │   ├── bootstrap.rtl.min.css
+│   │   │   └── bootstrap.rtl.min.css.map
+│   │   └── js
+│   │       ├── bootstrap.bundle.min.js
+│   │       └── bootstrap.bundle.min.js.map
+│   ├── images
+│   │   └── background-image.png
+│   ├── js
+│   │   └── color-modes.js
+│   └── upload
+├── config
+│   └── connection.php
+├── error.php
+├── includes
+│   ├── page-footer.php
+│   ├── page-header.php
+│   └── page-head.php
+├── index.php
+├── project_structure.txt
+├── README.md
+└── testing.php
+
+12 directories, 20 files
